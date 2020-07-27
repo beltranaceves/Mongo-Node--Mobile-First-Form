@@ -1,11 +1,12 @@
 # IPM1920-P3
 
 This is a first aproximation to vanilla web development. Concepts included:
-	Mobile-first design.
-	W3C compliant HTML and CSS.
-	ARIA and a11y accesibility practices. (no localization).
-	Dynamic content.
-	Node.js based backend without library routing.
+
+- Mobile-first design.
+- W3C compliant HTML and CSS.
+- ARIA and a11y accesibility practices. (no localization).
+- Dynamic content.
+- Node.js based backend without library routing.
 	
 
 ## Requirements
