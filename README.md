@@ -11,9 +11,9 @@ This is a first aproximation to vanilla web development. Concepts included:
 
 ## Roadmap
 
--Alert feedback styling integration.
--Localization.
--Rework into PWA.
+- Alert feedback styling integration.
+- Localization.
+- Rework into PWA.
 
 ## Requirements
 
