@@ -12,7 +12,7 @@ This is a first aproximation to vanilla web development. Concepts included:
 	
 
 ## Roadmap
-
+- Load available workouts from Db
 - Alert feedback styling integration.
 - Localization.
 - Rework into PWA.
