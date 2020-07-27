@@ -3,7 +3,8 @@ Para móvil se mantiene el aspecto en una columna. Sin embargo para tablet y des
 todo el espacio horizontal del que disponemos ahora.
 
 Validación:
-La hace el cliente, comprueba que el nombre tenga menos de 40 caracteres y que el archivo subido es una imagen.
+El cliente comprueba que el nombre tenga menos de 40 caracteres y que el archivo subido es una imagen.
+El servidor comprueba que no se hayan hecho peticiones inválidas que no cumplan con las condiciones que aplica el cliente. Además valida los ejercicios uno a uno.
 
 Gestion de errores:
 Se informa al usuario a través de pop-ups en el navegador.
