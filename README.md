@@ -26,7 +26,7 @@ This is a first aproximation to vanilla web development. Concepts included:
 ```
 Doesn't use local database anymore.
 
-Connecs with MongoDb Atlas.
+Connecs to MongoDb Atlas.
 ```
 
 ## Run
