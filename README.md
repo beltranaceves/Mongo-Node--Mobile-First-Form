@@ -9,6 +9,12 @@ This is a first aproximation to vanilla web development. Concepts included:
 - Node.js based backend without library routing.
 	
 
+## Roadmap
+
+-Alert feedback styling integration.
+-Localization.
+-Rework into PWA.
+
 ## Requirements
 
 - Node 12.14.0+. 
