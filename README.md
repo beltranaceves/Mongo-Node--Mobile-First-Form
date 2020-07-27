@@ -26,15 +26,16 @@ This is a first aproximation to vanilla web development. Concepts included:
 ## Database creation
 
 ```
-Doesn't use local database anymore.
+Doesn't use local database anymore. Connecs to MongoDb Atlas.
 
-Connecs to MongoDb Atlas.
+If you want to use your own MongoDb instance change the connection string urldb to:
+					"mongodb://localhost:27017/<databaseName>".
+
+Make sure you have a collection named "workouts".
 ```
 
 ## Run
 To run localy change url const in /src/javascripts/client.js to "http:localhost:8000".
-
-If you want to use your own MongoDb instance change the connection string urldb to "mongodb://localhost:27017/<databaseName>".
 ```
 cd /directory/src
 node server.js
