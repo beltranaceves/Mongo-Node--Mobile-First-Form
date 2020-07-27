@@ -1,0 +1,15 @@
+Estructura de la interfaz:
+Para móvil se mantiene el aspecto en una columna. Sin embargo para tablet y desktop dividimos la vista en dos columnas para acomodar
+todo el espacio horizontal del que disponemos ahora.
+
+Validación:
+La hace el cliente, comprueba que el nombre tenga menos de 40 caracteres y que el archivo subido es una imagen.
+
+Gestion de errores:
+Se informa al usuario a través de pop-ups en el navegador.
+	Estados de la conexión:
+	Se contemplaran cuatro estados, error en la conexión a la base de datos/inserción, éxito de la operación ,errores en los datos del formulario y que no se pueda establecer conexión con el servidor.
+	Se realizará feedback al usuario a través los pop-ups mencionados anteriormente.
+
+Input de datos:
+Los campos cuentan con placeholders que indican su uso y reglas.

@@ -1,0 +1,134 @@
+  Apariencia de la web en una pantalla de móvil:
+
+	                       *--------------------------------------*
+	                       |                                      |
+	                       |         Creación de Rutina           |
+	                       |                                      |
+	                       |         ------------------           |
+	                       |        |                  |          |
+	                       |        |    Imagen de     |          |
+	                       |        |   la rutina      |          |
+	                       |        |                  |          |
+	                       |        |                  |          |
+	                       |        |                  |          |
+	                       |         ------------------           |
+	                       |                                      |
+	                       |                                      |
+	                       |         Información Genenal          |
+	                       |                                      |
+	                       |                                      |
+	                       |      Nombre                          |
+	                       |                                      |
+	                       |      -------------------------       |
+	                       |                                      |
+	                       |      Descripción                     |
+	                       |      -------------------------       |
+	                       |     |                         |      |
+	                       |     |                         |      |
+	                       |     |                         |      |
+	                       |      -------------------------       |
+	                       |                                      |
+	                       |      1.Nombre ejercicio              |
+	                       |      reps/mins duracion     X        |
+	                       |                                      |
+	                       |      2.Nombre ejercicio              |
+	                       |      reps/mins duracion  +  X        |
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |              Registrar               |
+	                       |	                              |
+	                       *--------------------------------------*
+	
+
+Los pop-ups que aparecen en navegador para dar feedback al usuario tras pulsar el boton de registro de la rutina:
+	
+			       *--------------------------------------*
+	                       |                                      |   -Cuando se ha introducido correctamente la rutina en la BD
+	                       |                                      |
+	                       |                                      |
+	                       |         Inserción realizada          |
+	                       |             con éxito                |
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |	                 Aceptar      |
+	                       *--------------------------------------*
+	
+
+			       *--------------------------------------*
+	                       |                                      |
+	                       |                                      |   -Cuando no se cumplen los requisitos para los diferentes inputs, puede contener cualquiera o todos los siguientes mensajes:
+	                       |                                      |        -El campo nombre es obligatorio.
+	                       |         Error en el formulario       |	       -El campo descripción es obligatorio.
+	                       |          (detalles del error)        |        -Debe introducir por lo menos un ejercicio en la rutina.
+	                       |                                      |	       -Debe introducir la duración del ejericio.
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |	                 Aceptar      |
+	                       *--------------------------------------*
+
+
+
+
+			       *--------------------------------------*
+	                       |                                      |
+	                       |                                      |   -Despues de validar el formulario y intentar la inserción de la rutina pero no se puede establecer conexión con la base de datos.
+	                       |                                      |   
+	                       |         Error en la conexión         |
+	                       |          a la base de datos          |
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |	                 Aceptar      |
+	                       *--------------------------------------*
+	
+
+
+			       *--------------------------------------*
+	                       |                                      |
+	                       |                                      |   -Cuando el cliente no puede establecer conexión con el servidor al intentar envia el formulario.
+	                       |                                      |   
+	                       |          Conexión perdida            |
+	                       |           con el servidor            |
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |                                      |
+	                       |	                 Aceptar      |
+	                       *--------------------------------------*
+
+	
+	
+	
+	
+Aspecto de la web en tablet/desktop:
+	
+	      
+	                       *--------------------------------------**--------------------------------------*
+	                       |                                      ||         Información Genenal          |
+	                       |         Creación de Rutina           ||                                      |
+	                       |                                      ||      Nombre                          |
+	                       |         ------------------           ||      -------------------------       |
+	                       |        |                  |          ||                                      |
+	                       |        |    Imagen de     |          ||      Descripción                     |
+	                       |        |   la rutina      |          ||      -------------------------       |
+	                       |        |                  |          ||     |                         |      |
+	                       |        |                  |          ||     |                         |      |
+	                       |        |                  |          ||     |                         |      |
+	                       |         ------------------           ||      -------------------------       |
+	                       |                                      ||                                      |
+	                       |                                      ||      1.Nombre ejercicio              |
+	                       |                                      ||      reps/mins duracion     X        |
+	                       |                                      ||                                      |
+	                       |                                      ||      2.Nombre ejercicio              |
+	                       |                                      ||      reps/mins duracion  +  X        |
+	                       |             Subir imagen             ||                                      |
+	                       |                                      ||                                      |
+	                       |                                      ||                                      |
+	                       |                                      ||             Registrar                |
+	                       *--------------------------------------**--------------------------------------*
+			                   

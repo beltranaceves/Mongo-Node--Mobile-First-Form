@@ -1,0 +1,21 @@
+.content {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.content > div {
+  background-color: rgba(240, 240, 240, 0.8);
+  border: 1px solid rgb(38, 161, 38);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.submitForm {
+  width: 90px;
+  height: 90px;
+  alignment: center;
+}
