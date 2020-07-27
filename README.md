@@ -1,4 +1,6 @@
 # IPM1920-P3
+Simple workout creation form.
+
 
 [Live Demo](https://ipm1920-p3.herokuapp.com/)
 
