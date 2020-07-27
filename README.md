@@ -1,4 +1,6 @@
 # IPM1920-P3
+Simple workout creation form.
+
 
 [Live Demo](https://ipm1920-p3.herokuapp.com/)
 
@@ -12,7 +14,7 @@ This is a first aproximation to vanilla web development. Concepts included:
 	
 
 ## Roadmap
-- Load available workouts from Db
+- Load available workouts from Db.
 - Alert feedback styling integration.
 - Localization.
 - Rework into PWA.
@@ -24,15 +26,16 @@ This is a first aproximation to vanilla web development. Concepts included:
 ## Database creation
 
 ```
-Doesn't use local database anymore.
+Doesn't use local database anymore. Connecs to MongoDb Atlas.
 
-Connecs to MongoDb Atlas.
+If you want to use your own MongoDb instance change the connection string urldb to:
+					"mongodb://localhost:27017/<databaseName>".
+
+Make sure you have a collection named "workouts".
 ```
 
 ## Run
 To run localy change url const in /src/javascripts/client.js to "http:localhost:8000".
-
-If you want to use your own MongoDb instance change the connection string urldb to "mongodb://localhost:27017/<databaseName>".
 ```
 cd /directory/src
 node server.js
