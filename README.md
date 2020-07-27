@@ -6,7 +6,7 @@ This is a first aproximation to vanilla web development. Concepts included:
 
 - Mobile-first design.
 - W3C compliant HTML and CSS.
-- ARIA and a11y accesibility practices. (no localization).
+- ARIA and a11y accesibility practices.
 - Dynamic content.
 - Node.js based backend without library routing.
 	
