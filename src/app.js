@@ -144,7 +144,7 @@ module.exports = {
             {
                 switch (path) {
                     case '/workouts':
-                        response.writeHead(200, {'Content-Type': 'text/text'});
+                        response.writeHead(200, {'Content-Type': 'application/json'});
                         getWorkouts(response);
                         break;
                     case '/':
