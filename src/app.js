@@ -38,7 +38,7 @@ const findDocuments = function(db, res, callback) {
         assert.equal(err, null);
         console.log("Found the following records");
         //console.log(docs)
-        const JSON_workouts = JSON.stringify(docs);
+        const JSON_workouts = JSON.stringify(docs[0]);
         renderText(JSON_workouts, res);
 
         callback;
