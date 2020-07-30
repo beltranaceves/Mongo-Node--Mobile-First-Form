@@ -1,8 +1,11 @@
 var url = require('url');
 var fs = require('fs');
+const Workout = require('./model/workout');
 
 
 const MongoClient = require('mongodb').MongoClient;
+const mongoose = require('mongoose');
+
 const assert = require('assert');
 
 // Connection URL
@@ -25,7 +28,38 @@ function renderFile(path, response) {
         }
         response.end();
     });
-};
+}
+
+const findDocuments = function(db, res, callback) {
+    // Get the documents collection
+    const collection = db.collection('workouts');
+    // Find some documents
+    collection.find({}).toArray(function(err, docs) {
+        assert.equal(err, null);
+        console.log("Found the following records");
+        //console.log(docs)
+        const JSON_workouts = JSON.stringify(docs);
+        renderText(JSON_workouts, res);
+
+        callback;
+    });
+}
+
+function getWorkouts(res) {
+    const client = new MongoClient(urldb,{useUnifiedTopology: true , useNewUrlParser: true});
+    const dbName = "workouts";
+// Use connect method to connect to the server
+    client.connect(function(err) {
+        assert.equal(null, err);
+        console.log("Connected correctly to server");
+
+        const db = client.db(dbName);
+
+        findDocuments(db, res, function() {
+            client.close();
+        });
+    });
+}
 
 function insertWorkout(workout, response) {
     // Use connect method to connect to the server
@@ -47,6 +81,7 @@ function insertWorkout(workout, response) {
 }
 
 function renderText(text, response) {
+    console.log(text);
     response.write(text);
     response.end();
 }
@@ -93,6 +128,7 @@ module.exports = {
     handleRequest: function (request, response) {
         var path = url.parse(request.url).pathname;
         var tmp_path = path.split('.');
+        console.log(path);
         if (request.method == 'POST') {
             var body = '';
             request.on('data', (data) => {
@@ -107,6 +143,10 @@ module.exports = {
         } else {
             {
                 switch (path) {
+                    case '/workouts':
+                        response.writeHead(200, {'Content-Type': 'text/text'});
+                        getWorkouts(response);
+                        break;
                     case '/':
                         response.writeHead(200, {'Content-Type': 'text/html'});
                         renderFile('./HTMLs/alternative/Form.html', response);
