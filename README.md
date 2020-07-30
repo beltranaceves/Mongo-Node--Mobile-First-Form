@@ -1,8 +1,9 @@
 # IPM1920-P3
 Simple workout creation form.
 
-
 [Live Demo](https://ipm1920-p3.herokuapp.com/)
+
+![Image](https://github.com/beltranaceves/ipm19120-p3/blob/master/LHR.png)
 
 This is a first aproximation to vanilla web development. Concepts included:
 
