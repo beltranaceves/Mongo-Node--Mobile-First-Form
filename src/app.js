@@ -154,6 +154,7 @@ module.exports = {
 
                     default:
                         response.writeHead(200, {
+                            "Cache-Control": "max-age=100000",
                                 'Content-Type': 'text/'.concat(
                                     tmp_path[tmp_path.length - 1])
                             }
