@@ -44,7 +44,7 @@ const findDocuments = function(db, res, callback) {
         callback;
     });
 }
-
+//TODO rework todo lo de mongo
 function getWorkouts(res) {
     const client = new MongoClient(urldb,{useUnifiedTopology: true , useNewUrlParser: true});
     const dbName = "workouts";
@@ -149,31 +149,16 @@ module.exports = {
                         break;
                     case '/':
                         response.writeHead(200, {'Content-Type': 'text/html'});
-                        renderFile('./HTMLs/alternative/Form.html', response);
-                        break;
-                    /*
-                case '/style.css':
-                    response.writeHead(200, {'Content-Type': 'text/css'});
-                    renderFile('./stylesheets/style.css', response);
-                    break;
-                     */
-                    case '/client.js':
-                        response.writeHead(200, {'Content-Type': 'text/js'});
-                        renderFile('./javascripts/client.js', response);
+                        renderFile('./HTMLs/views/Form.html', response);
                         break;
 
                     default:
-                        /*
-                        response.writeHead(404);
-                        response.write('Route not defined');
-                        response.end();
-                         */
                         response.writeHead(200, {
                                 'Content-Type': 'text/'.concat(
                                     tmp_path[tmp_path.length - 1])
                             }
                         );
-                        renderFile('./HTMLs/alternative/'.concat(path), response);
+                        renderFile('./'.concat(path), response);
                         break;
                 }
             }
