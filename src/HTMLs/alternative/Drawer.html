@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Drawer_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Esto es un formulario para introducir una rutina de ejercicios en una base de datos">
+    <title>Formulario Rutina Ejercicios</title>
+
+    <script src="client.js"></script>
+
+    <link rel="preload" type="text/css" href="./opensans-font.css" as="font">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="header">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Fitness</label>
+        <ul>
+            <li><a class="active" href="#">Inicio</a></li>
+            <li><a href="#">Ver Rutinas</a></li>
+            <li><a href="#">Crear Rutina</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="page-content">
+    <div class="form-v4-content">
+        <div role="form" class="form-left">
+            <h2 role="heading" aria-level="1">Creación de Rutina</h2>
+            <div class="upload-image">
+                <label id="input-label" for="file-input">
+                    <img id="image"
+                         src="https://cdn.glitch.com/66116b20-b297-4c2d-b39e-4e523a1a4a2f%2Fuplad_2.png?v=1577533118651"
+                         alt="cargar imagen y previsualización"/>
+                    <input title="inserte aquí la imagen que desea para la rutina" class="file-input" id="file-input"
+                           type="file" onchange="previewFile()" style="display:none" accept="image/*"><br>
+                </label>
+            </div>
+            <div class="form-left-last">
+                <label role="button" id="button_label" for="upload_button" tabindex="0">
+                    <input type="submit" id="upload_button" name="account" class="account" value="Subir Imagen"
+                           id="button_image"
+                           onclick="inputImage()">
+                </label>
+
+            </div>
+
+        </div>
+        <div role="form" class="form-detail"
+             id="myform">
+            <h2 role="heading" aria-level="2">Información General</h2>
+            <div class="form-group">
+                <div class="form-row form-row-1">
+                    <label for="name">Nombre</label>
+                    <input title="inserte aqui el nombre de la rutina" role="textbox" contenteditable="true"
+                           required="required" type="text" name="name" id="name" class="input-text" maxlength="40"
+                           placeholder="Máximo 40 caracteres.">
+                </div>
+                <div class="form-row form-row-1">
+                    <label for="description">Descripción</label>
+                    <textarea
+                            title="inserte aqui la descripción de la rutina. Puede separar diferences pasos con saltos de línea"
+                            role="textbox" contenteditable="true" aria-multiline="true"
+                            required="required" id="description" name="description" class="input-text"
+                            placeholder="ENTER separa pasos diferentes"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row form-row-1 ">
+                    <div class="exercise_template" id="exercise_0" aria-live="polite">
+                        <div class="exercise_name_container" id="exercise_name_container">
+                            <label class="hidden" for="exercise_name"> Nombre Ejercicio</label>
+                            <select title="Seleccione el ejercicio que desea en un despegable" role="listbox" required
+                                    class="exercise_name" id="exercise_name" onfocus='this.size=5;'
+                                    onblur='this.size=1;'
+                                    onchange='this.size=1; this.blur();'>
+                                <option value="" disabled selected hidden>Ejercicio...</option>
+                                <option value="jumping jacks">jumping jacks</option>
+                                <option value="jumping jacks">high knees</option>
+                                <option value="jumping jacks">side-to-side lunges</option>
+                                <option value="jumping jacks">squats</option>
+                                <option value="jumping jacks">climbers</option>
+                                <option value="jumping jacks">reverse crunches</option>
+                                <option value="jumping jacks">sitting twists</option>
+                                <option value="jumping jacks">butterfly sit-ups</option>
+                                <option value="jumping jacks">crunch kicks</option>
+                                <option value="jumping jacks">raised leg circles</option>
+                                <option value="jumping jacks">raised leg hold</option>
+                                <option value="jumping jacks">jumping lunges</option>
+                                <option value="jumping jacks">calf raises</option>
+                                <option value="jumping jacks">knee to elbow crunches</option>
+                                <option value="jumping jacks">get-ups</option>
+                                <option value="jumping jacks">one legged bridges</option>
+                                <option value="jumping jacks">butt kicks</option>
+                                <option value="jumping jacks">toe tap hops</option>
+                                <option value="jumping jacks">half jacks</option>
+                                <option value="jumping jacks">jump squats</option>
+                                <option value="jumping jacks">wall sit</option>
+                                <option value="jumping jacks">sentadillas</option>
+                                <option value="jumping jacks">sentadillas con salto</option>
+                                <option value="jumping jacks">sentadillas búlgaras</option>
+                                <option value="jumping jacks">sentadillas búlgaras con salto</option>
+                                <option value="jumping jacks">knee-to-elbows</option>
+                                <option value="jumping jacks">side-to-side chops</option>
+                                <option value="jumping jacks">cross chops</option>
+                                <option value="jumping jacks">twist jacks</option>
+                                <option value="jumping jacks">side leg raises</option>
+                            </select>
+                        </div>
+                        <div class="duration_group_container">
+                            <label class="hidden" for="duration"> Duracion del ejercicio </label>
+                            <div class="duration_unit_container">
+                                <!-- TODO arreglar que no se pueda cambiar de REPS a MINS con enter-->
+                                <label class="switch"><input
+                                        title="Elija el tipo de duración entre repeticiones y minutos" role="checkbox"
+                                        aria-checked="false" type="checkbox" id="togBtn" class="duration_unit"
+                                        tabindex="0">
+                                    <span tabindex="0" class="slider round"><span class="on"></span><span
+                                            class="off"></span></span>
+                                </label>
+                            </div>
+                            <div class="duration_container">
+                                <input title="elija la duración del ejercicion" role="textbox" contenteditable="true"
+                                       required="required" type="number" min="0" id="duration" class="duration"
+                                       placeholder="Ej: 20 reps/mins"/>
+                            </div>
+                        </div>
+                        <div class="buttons_container">
+                            <div class="add_button_container">
+                                <button title="Pulse aquí para añadir otro ejercicio" role="button" class="add_button"
+                                        id="add_button" onclick="createExercise(this.parentNode)">+
+                                </button>
+                            </div>
+                            <div class="delete_button_container">
+                                <button title="Pulse aqui para eliminar este ejercicio" role="button"
+                                        class="delete_button" onclick="removeExercise(this.parentNode.parentNode)">X
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- -->
+                    </div>
+                </div>
+            </div>
+            <div class="form-row-last">
+                <input title="Pulse Registrar para subir la rutina una vez completado el formulario" role="button"
+                       type="submit" name="register" class="register" value="Registrar" onclick="submitForm()">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -129,8 +129,8 @@ function submitForm() {
     };
     console.log(form_data);
     var http = new XMLHttpRequest();
-    var url = "https://ipm1920-p3.herokuapp.com/";
-    //var url = "http:localhost:8000";
+    //var url = "https://ipm1920-p3.herokuapp.com/";
+    var url = "http:localhost:8000";
     http.open("POST", url, true);
     http.setRequestHeader("Content-Type", "application/text;charset=UTF-8");
 
