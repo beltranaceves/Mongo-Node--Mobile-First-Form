@@ -34,7 +34,7 @@ Make sure you have a collection named "workouts".
 ```
 
 ## Run
-To run localy change url const in /src/javascripts/client.js to "http:localhost:8000".
+It will run on port 8000 by default. (Change in /src/server.js)
 ```
 cd /directory/src
 node server.js
